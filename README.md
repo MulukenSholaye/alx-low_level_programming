@@ -1,50 +1,43 @@
-# C - Hello, World
-By Muluken Sholaye
-In this project, I learned about compilation using `gcc`, entry
-points using `main`, and text-printing functions in C.
+# Low-Level Programming - Data Structures, Algorithms, Linux/Unix System Programming
 
-## Tasks :page_with_curl:
+This repository contains programs written for the low-level programming and
+algorithm track at ALX software engineering. In these projects, which  occurred
+throughout the duration of the Year 1 curriculum, I learned about data
+structures, algorithms, and other low-level programming concepts while
+working in the C language. The specific list of projects contained follows:
 
-* **0. Preprocessor**
-  * [0-preprocessor](./0-preprocessor): Bash script that runs a C file saved in the
-  variable `$CFILE` through the preprocessor and saves the result in the file `c`.
+* [0x00. C - Hello, World](./0x00-hello_world)
+* [0x01. C - Variables, if, else, while](./0x01-variables_if_else_while)
+* [0x02. C - Functions, nested loops](./0x02-functions_nested_loops)
+* [0x04. C - More functions, more nested loops](./0x04-more_functions_nested_loops)
+* [0x05. C - Pointers, arrays and strings](./0x05-pointers_arrays_strings)
+* [0x06. C - More pointers, arrays and strings](./0x06-pointers_arrays_strings)
+* [0x07. C - Even more pointers, arrays and strings](./0x07-pointers_arrays_strings)
+* [0x08. C - Recursion](./0x07-recursion)
+* [0x09. C - Static libraries](./0x08-static_libraries)
+* [0x0A. C - argc, argv](./0x09-argc_argv)
+* [0x0B. C - malloc, free](./0x0A-malloc_free)
+* [0x0C. C - More malloc, free](./0x0C-more_malloc_free)
+* [0x0D. C - Preprocessor](./0x0D-preprocessor)
+* [0x0E. C - Structures, typedef](./0x0E-structures_typedef)
+* [0x0F. C - Function pointers](./0x0F-function_pointers)
+* [0x10. C - Variadic functions](./0x10F-variadic_functions)
+* [0x12. C - Singly linked lists](./0x12-singly_linked_lists)
+* [0x13. C - More singly linked lists](./0x13-more_singly_linked_lists)
+* [0x14. C - Bit manipulation](./0x14-bit_manipulation)
+* [0x15. C - File I/O](./0x15-file_io)
+* [0x17. C - Doubly linked lists](./0x17-doubly_linked_lists)
+* [0x18. C - Dynamic libraries](./0x18-dynamic_libraries)
+* [0x1A. C - Hash tables](./0x1A-hash_tables)
 
-* **1. Compiler**
-  * [1-compiler](./1-compiler): Bash script that compiles a C file saved in the
-  variable `$CFILE` that does not link; saves the result in an output file of the
-  same name but with a `.o` extension.
-    * Example: If the C file is `main.c`, the output is `main.o`.
+## Author 🏴✒️
 
-* **2. Assembler**
-  * [2-assembler](./2-assembler): Bash script that generates the assembly code of a
-  C code saved in the variable `$CFILE`; saves the result in an output file of the
-  same name but with a `.s` extension.
-    * Example: If the C file is `main.c`, the result is `main.s`.
+* __Muluken Sholaye Tesfaye__ <[MulukenSholaye](https://github.com/MulukenSholaye)>
 
-* **3. Name**
-  * [3-name](./3-name): Bash Script that compiles a C file saved in the variable
-  `$CFILE` and creates an executable `cisfun`.
+## Acknowledgements 🙏:
 
-* **4. Hello, puts**
-  * [4-puts.c](./4-puts.c): C program that prints exactly `"Programming is like building
-  a multilingual puzzle`, followed by a new line, using the function `puts`.
+All work contained in this project was completed as part of the curriculum for
+Holberton School and ALX . Holberton School with ALX is a campus-based full-stack software
+engineering program that prepares students for careers in the tech industry
 
-* **5. Hello, printf**
-  * [5-printf.c](./5-printf.c): C program that prints exactly `with proper grammer, but
-  the outcome is a piece of art,`, followed by a new line, using the function `printf`.
 
-* **6. Size is not grandeur, and territory does not make a nation**
-  * [6-size.c](./6-size.c): C program that prints the size of various types on the computer
-  it is compiled and run on.
-
-* **7. Intel**
-  * [100-intel](./100-intel): Script that generates the assembly code in Intel syntax of a
-  C file saved in the variable $CFILE; saves the result in an output file of the same name
-  but with a `.s` extension.
-    * Example: If the C file is `main.c`, the output is `main.s`.
-
-* **8. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity**
-  * [101-quote.c](./101-quote.c): C program that prints exactly `and that piece of art is
-  useful" - Dora Korpar, 2015-10-19`, followed by a new line, to the standard error,
-  without using any functions listed in the NAME sesction of the man(3) `printf` or man(3)
-  `puts`.
