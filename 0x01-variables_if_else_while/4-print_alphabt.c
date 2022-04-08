@@ -1,20 +1,19 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
- *  * main - Entry point
+ *  * main - Prints some letters of alphabet
  *   *
- *    * Return: Always 0 (Success)
+ *    * Return: Always (Success)
  **/
 int main(void)
 {
-	char low;
+	char c;
 
-	for (low = 'a'; low <= 'z'; low++)
-		putchar(low);
-	for (low = 'A'; low <= 'Z'; low++)
-		putchar(low);
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		if (c != 'e' && c != 'q')
+			putchar(c);
+	}
 	putchar('\n');
-
 	return (0);
 }
