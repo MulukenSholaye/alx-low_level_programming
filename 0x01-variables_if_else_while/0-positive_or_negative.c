@@ -6,7 +6,7 @@
  *  * main - Prints if number is positive, zero or negative
  *   *
  *    * Return: Always (Success)
- *     */
+ **/
 int main(void)
 {
 	int n;
