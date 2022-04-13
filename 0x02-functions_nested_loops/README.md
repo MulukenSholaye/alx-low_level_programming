@@ -6,12 +6,12 @@ in C while practicing declaring and defining my own functions.
 
 ## Helper File :raised_hands:
 
-* [_putchar.c](./_putchar.c): C function that writes a character to `stdout`.
+* [./0-putchar.c](./0-putchar.c): C function that writes a character to `stdout`.
 
 ## Tasks :page_with_curl:
 
 * **0. _putchar**
-  * [0-holberton.c](./0-holberton.c): C program that prints `Holberton`, followed by a
+  * [0-putchar .c](./0-putchar.c): C program that prints `Holberton`, followed by a
   new line. Returns 0.
 
 * **1. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game**
