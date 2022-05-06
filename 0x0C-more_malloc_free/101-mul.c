@@ -1,67 +1,29 @@
 #include "main.h"
-#include <stdlib.h>
-#include <stdio.h>
-#include <ctype.h>
 
 /**
- * check_num - check num
- * @x : first num
- * @y : sec num
- *accept ints and return multiplication
- *argv: argument vector.
- *
- * Return: no return.
+ * main - multiplies two positive numbers
+ * @argc: n arguments
+ * @argv: args
+ * Return: int
  */
-
-int check_num(int x, int y)
-{
-	int a = isdigit(x);
-	int b = isdigit(y);
-
-	if (a == 0 && b == 0)
-	{
-		return (0);
-	}
-	else
-	{
-		return (1);
-	}
-}
-
-/**
- * mul - determines
- * @x : firstnum
- * @y : sec num
- * Return: no return.
- **/
-
-int mul(int x, int y)
-{
-	return (x * y);
-}
-
-/**
- * main - is_mul-determines
- * @argc : num of args
- * @argv : argument vector
- * Return: zero
- */
-
 int main(int argc, char *argv[])
 {
-	int a;
-	int b;
-
+unsigned long mul;
+int i, j;
 	if (argc != 3)
+	{ printf("Error\n");
+	exit(98); }
+	for (i = 1; i < argc; i++)
 	{
-		printf("Error\n");
-		exit(98);
+		for (j = 0; argv[i][j] != '\0'; j++)
+		{
+			if (argv[i][j] > 57 || argv[i][j] < 48)
+			{  printf("Error\n");
+			exit(98); }
+		}
+
 	}
-	a = check_num(atoi(argv[1]), atoi(argv[2]));
-	if (a == 0)
-	{
-		b = mul(atoi(argv[1]), atoi(argv[2]));
-		printf("%d\n", b);
-	}
-	return (0);
+	mul = atol(argv[1]) *atol(argv[2]);
+	printf("%lu\n", mul);
+return (0);
 }
