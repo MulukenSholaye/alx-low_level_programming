@@ -4,15 +4,15 @@
  * _strlen - returns the length of a string.
  * @s: character value.
  *
- *Return: x value
+ *Return: i value
  */
 int _strlen(const char *s)
 {
-int x;
+int i;
 
-for (x = 0; s[i] != 0; x++)
+for (i = 0; s[i] != 0; i++)
 ;
-return (x);
+return (i);
 }
 /**
  * add_node_end -  adds a new node at the end of a list_t list.
