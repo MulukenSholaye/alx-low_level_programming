@@ -1,18 +1,18 @@
-#include <string.h>
 #include "lists.h"
+#include <string.h>
 /**
  * _strlen - returns the length of a string.
  * @s: character value.
  *
- *Return: x value
+ *Return: i value
  */
 int _strlen(const char *s)
 {
-int x;
+int i;
 
-for (x = 0; s[i] != 0; x++)
+for (i = 0; s[i] != 0; i++)
 ;
-return (x);
+return (i);
 }
 /**
  * add_node_end -  adds a new node at the end of a list_t list.
@@ -23,22 +23,22 @@ return (x);
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-list_t *n = (list_t *) malloc(sizeof(list_t));
-list_t *e = *head;
+list_t *new = (list_t *) malloc(sizeof(list_t));
+list_t *end = *head;
 
-if (n == NULL)
+if (new == NULL)
 return (NULL);
-n->str = strdup(str);
-n->len = _strlen(str);
-n->next = NULL;
+new->str = strdup(str);
+new->len = _strlen(str);
+new->next = NULL;
 if (*head == NULL)
-(*head) = n;
+(*head) = new;
 else
 {
-while (e->next != NULL)
-e = e->next;
+while (end->next != NULL)
+end = end->next;
 }
-if (e)
-e->next = n;
-return (n);
+if (end)
+end->next = new;
+return (new);
 }
