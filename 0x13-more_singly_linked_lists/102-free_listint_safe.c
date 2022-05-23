@@ -70,7 +70,7 @@ nd = looped_listint_count(*h);
 
 if (nd == 0)
 {
-for (; h != NULL && *h != NULL; ndx++)
+for (; h != NULL && *h != NULL; nd++)
 {
 buff = (*h)->next;
 free(*h);
