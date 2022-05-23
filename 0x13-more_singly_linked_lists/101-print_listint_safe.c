@@ -27,7 +27,7 @@ while (har)
 {
 if (tort == har)
 {
-tortoise = head;
+tort = head;
 while (tort != har)
 {
 nodes++;
