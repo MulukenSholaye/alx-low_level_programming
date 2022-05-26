@@ -15,7 +15,7 @@ unsigned long int xor = num1 ^ num2, digits = 0;
 
 while (xor > 0)
 {
-digits+= (xor & 1);
+digits += (xor & 1);
 xor >>= 1;
 }
 
