@@ -21,7 +21,7 @@ if (text_content)
 {
 while (text_content[bb])
 bb++;
-aa = write(file_desc, text_content,bb);
+aa = write(file_desc, text_content, bb);
 if (aa != bb)
 return (-1);
 }
