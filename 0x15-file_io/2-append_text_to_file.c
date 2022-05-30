@@ -27,6 +27,5 @@ return (-1);
 }
 
 close(file_desc);
-
 return (1);
 }
