@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-int filed_r, filed_w, xx, mm ,nn;
+int filed_r, filed_w, xx, mm, nn;
 char buffer[BUFSIZ];
 
 if (argc != 3)
