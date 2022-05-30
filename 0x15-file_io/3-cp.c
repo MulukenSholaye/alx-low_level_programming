@@ -8,43 +8,43 @@
  */
 int main(int argc, char *argv[])
 {
-int fd_r, fd_w, x, m, n;
-char buf[BUFSIZ];
+int filed_r, filed_w, xx, mx,nn;
+char buffer[BUFSIZ];
 
 if (argc != 3)
 {
 dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 exit(97);
 }
-fd_r = open(argv[1], O_RDONLY);
-if (fd_r < 0)
+filed_r = open(argv[1], O_RDONLY);
+if (filed_r < 0)
 {
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 exit(98);
 }
-fd_w = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-while ((x = read(fd_r, buf, BUFSIZ)) > 0)
+filed_w = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+while ((xx = read(filed_r, buffer, BUFSIZ)) > 0)
 {
-if (fd_w < 0 || write(fd_w, buf, x) != x)
+if (filed_w < 0 || write(fd_w, buf, xx) != xx)
 {
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-close(fd_r);
+close(filed_r);
 exit(99);
 }
 }
-if (x < 0)
+if (xx < 0)
 {
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 exit(98);
 }
-m = close(fd_r);
-n = close(fd_w);
-if (m < 0 || n < 0)
+mm = close(filed_r);
+nn = close(filed_w);
+if (mm < 0 || nn < 0)
 {
-if (m < 0)
-dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_r);
-if (n < 0)
-dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_w);
+if (mm < 0)
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", filed_r);
+if (nn < 0)
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", filed_w);
 exit(100);
 }
 return (0);
