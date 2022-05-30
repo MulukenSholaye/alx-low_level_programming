@@ -25,7 +25,7 @@ exit(98);
 filed_w = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 while ((xx = read(filed_r, buffer, BUFSIZ)) > 0)
 {
-if (filed_w < 0 || write(fd_w, buf, xx) != xx)
+if (filed_w < 0 || write(filed_w, buffer, xx) != xx)
 {
 dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 close(filed_r);
