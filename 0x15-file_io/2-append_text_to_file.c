@@ -8,25 +8,25 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-int fd, a, b = 0;
+int file_desc, aa, bb = 0;
 
 if (!filename)
 return (-1);
 
-fd = open(filename, O_WRONLY | O_APPEND);
-if (fd < 0)
+file_desc = open(filename, O_WRONLY | O_APPEND);
+if (file_desc < 0)
 return (-1);
 
 if (text_content)
 {
-while (text_content[b])
-b++;
-a = write(fd, text_content, b);
-if (a != b)
+while (text_content[bb])
+bb++;
+aa = write(file_desc, text_content,bb);
+if (aa != bb)
 return (-1);
 }
 
-close(fd);
+close(file_desc);
 
 return (1);
 }
