@@ -32,7 +32,7 @@ free(buff);
 return (0);
 }
 
-read_check = read(file, buff, letters); /*read file*/
+read_check = read(file_desc, buff, letters); /*read file*/
 if (read_check == -1) /*check if read failed*/
 return (0);
 
